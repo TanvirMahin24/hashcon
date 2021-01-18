@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+:root {
+  --light: #e7ecff !important;
+  --primary: #111b47 !important;
+  --primary-light: #37447e !important;
+  --secondary: #6f7cb2 !important;
+}
+.text__primary {
+  color: var(--primary-light);
+}
+.text__secondary {
+  color: var(--secondary);
+}
+.btn__primary {
+  color: var(--light);
+  background: var(--primary);
+  text-decoration: none;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+}
+.btn__primary:hover {
+  text-decoration: none;
+  color: var(--light);
+  background: var(--primary-light);
+  transition: 0.3s all ease-in-out;
+}
+.btn__primary__outline {
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  text-decoration: none;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all ease-in-out;
+}
+.btn__primary__outline:hover {
+  text-decoration: none;
+  color: var(--light);
+  background: var(--primary);
+  transition: 0.3s all ease-in-out;
+}
+.navbar .nav-item .nav-link {
+  color: var(--secondary);
+}
+.navbar .nav-item.active .nav-link {
+  color: var(--primary-light);
+}
+.navbar .navbar-brand {
+  color: var(--primary-light);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+}
+.hero__bg img {
+  height: 100%;
+}
