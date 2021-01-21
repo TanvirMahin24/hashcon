@@ -72,3 +72,18 @@ body {
 .hero__bg img {
   height: 100%;
 }
+#footer {
+  background: var(--light);
+}
+#footer .text__primary {
+  font-weight: 600;
+}
+.nav-link.text__primary:hover {
+  color: var(--primary-light);
+  transform: scale(1.05);
+  transition: 0.3s all ease-in-out;
+}
+#social a .fab {
+  font-size: 1.5rem;
+  padding: 0 10px;
+}
